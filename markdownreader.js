@@ -3,7 +3,7 @@
 	//忽略HTML代码
 	if (document.doctype) return;
 
-    document.write('<!DOCTYPE html><html><head><body><div id="container" class="viewport-flip"><div id="text-container" class="content flip" style="display:none;"></div><div id="markdown-container" class="content flip"></div></div><div id="markdown-outline"></div><div id="markdown-backTop" onclick="window.scrollTo(0,0);"></div></body></html>');
+    document.write('<!DOCTYPE html><html><head><body><div id="container" class="viewport-flip"><div id="text-container" class="content flip" style="display:none;"></div><div id="markdown-container" class="content flip"></div></div><div id="markdown-outline"></div><div id="markdown-backTop" class="no-print" onclick="window.scrollTo(0,0);"></div></body></html>');
     document.close();
 
 	var link = document.createElement('link');

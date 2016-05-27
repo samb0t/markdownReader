@@ -5,6 +5,7 @@
 
 body{
 	width: 100%;
+	background-color:#23241f;
 }
 
 .viewport-flip {
@@ -72,7 +73,7 @@ body{
 .content{
 	position: absolute;
 	left: 50%;
-	width: 748px;
+	width: 690px;
 	margin:10px auto;
 	margin-left: -374px;
 	background-color: #F8F8F8;
@@ -205,4 +206,9 @@ code {
 pre code {
 	padding: 0;
 	background-color: transparent;
+}
+@media print {
+	.no-print, .no-print * {
+		display: none !important;
+	}
 }
