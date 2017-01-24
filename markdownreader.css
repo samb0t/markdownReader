@@ -211,4 +211,8 @@ pre code {
 	.no-print, .no-print * {
 		display: none !important;
 	}
+    #markdown-container {
+        border: none !important;
+        box-shadow: none !important;
+    }
 }
