@@ -112,7 +112,7 @@ h1{font-size:170%;border-bottom:4px solid #aaa;padding-bottom:.5em;margin-top:1.
 h1:first-child{margin-top:0;padding-top:.25em;border-top:none;}
 h2{font-size:150%;margin-top:1.5em;border-bottom:4px solid #e0e0e0;padding-bottom:.5em;}
 h3{margin-top:1em;}
-hr{border:1px solid #ddd;}
+hr{border:1px solid #ddd;margin: 10px 0;}
 ul{margin:1em 0 1em 2em;}
 ol{margin:1em 0 1em 2em;}
 ul li,ol li{margin-top:.5em;margin-bottom:.5em;}
@@ -187,13 +187,15 @@ table tr:nth-child(even){background:#FAFAFA;}
 	text-align: center;
 	font-size: 16px;
 }
+
 pre{
     padding:5px 0;
 }
-code {
+
+code.inline {
 	padding: 1px 3px;
 	font-size: .72rem;
-	line-height: .72rem;
+	line-height: 1.12rem;
 	color: #c25;
 	background-color: #f7f7f9;
 	-webkit-border-radius: 3px;
@@ -202,7 +204,17 @@ code {
 	font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
 	border: 1px solid #e1e2e8;
 }
-pre code {
-	padding: 0;
-	background-color: transparent;
+
+@media only print{
+    #markdown-outline, #markdown-backTop {
+        display: none !important;
+    }
+    .content {
+        left: 0 !important;
+        width: auto !important;
+        margin-left: auto !important;
+        background-color: white !important;
+        border: 0 !important;
+        box-shadow: 0 !important;
+    }
 }
