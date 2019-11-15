@@ -205,16 +205,16 @@ code.inline {
 	border: 1px solid #e1e2e8;
 }
 
-@media only print{
+@media print{
     #markdown-outline, #markdown-backTop {
         display: none !important;
     }
-    .content {
+    #markdown-container {
         left: 0 !important;
-        width: auto !important;
+        width: 90%% !important;
         margin-left: auto !important;
         background-color: white !important;
         border: 0 !important;
-        box-shadow: 0 !important;
+        box-shadow: 0 0 0px !important;
     }
 }
